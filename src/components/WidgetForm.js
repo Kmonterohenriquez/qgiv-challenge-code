@@ -18,7 +18,7 @@ const WidgetForm = ({ companyInfo, toggleHandler }) => {
       <form onSubmit={(e) => submitHandler(e)}>
         <input
           type="text"
-          placeholder="Company's logo"
+          placeholder="Company's logo (Img link)"
           onChange={(e) => setLogo(e.target.value)}
         />
         <input
