@@ -1,0 +1,51 @@
+@import ../App
+.DisplayWidget 
+    text-align: center
+
+    img.logo 
+        width: 100%
+        max-height: 120px
+        object-fit: cover 
+        object-position: center
+    &-info
+        padding: 20px 10px 10px
+       
+        .company-name 
+            font-size: 1.2rem
+            margin-bottom: 10px
+            min-height: 50px
+            display: flex 
+            align-items: center 
+            justify-content: center
+
+
+        .company-goal 
+            color: $primary_color
+            font-weight: bolder
+            font-size: 1.3rem
+            margin-bottom: 5px
+        
+        .progress-bar
+            margin-bottom: 15px
+            overflow: hidden
+            .top-part 
+                display: flex 
+                justify-content: space-between
+                font-size: .75rem 
+                margin-bottom: 5px
+                .percents
+                    color: #858686
+            .bar 
+                height: 8px 
+                border: 1.5px solid #D3D8DC 
+                position: relative
+
+            .completion 
+                position: absolute 
+                height: 6px 
+                top: 0 
+                left: 0 
+                background: $primary_color
+
+        .success-msg 
+            color: #28df99

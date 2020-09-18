@@ -1,0 +1,56 @@
+* 
+    margin: 0
+    padding: 0 
+    box-sizing: border-box
+    outline: none
+
+$primary_color: #784297
+.App
+    padding: 100px 0
+    .container 
+        margin: 0 auto 
+        width: 90% 
+        max-width: 1000px
+    
+    &-title
+        text-align: center
+        margin-bottom: 25px
+        color: #333333
+
+    &-grid 
+        display: grid 
+        grid-template-columns: repeat(auto-fit, 220px)
+        grid-gap: 15px
+        justify-content: center
+        transition: all .5s
+    
+    input 
+        margin-bottom: 5px
+        padding: 10px 15px
+        border-radius: 30px
+        border-style: none 
+        border: 1.5px solid #D3D8DC 
+        outline: none
+        width: 100%
+        max-width: 300px
+
+    .primary-btn 
+        cursor: pointer
+        margin-top: 5px
+        padding: 12px
+        width: 200px
+        border-radius: 5px 
+        border-style: none
+        background: $primary_color 
+        color: white 
+        font-weight: bolder 
+        font-size: .9rem
+        letter-spacing: .5px
+        transition: background .4s
+        &:hover 
+            background: darken($primary_color,7% )
+
+
+
+
+
